@@ -1,5 +1,9 @@
+/* Estilo base inspirado en Nothink is Forever - noventero, grunge, elegante */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Staatliches&family=IBM+Plex+Mono&display=swap');
+
 body {
-  font-family: 'Bitter', serif;
+  font-family: 'IBM Plex Mono', monospace;
   background-color: #fff;
   color: #111;
   margin: 0;
@@ -10,12 +14,17 @@ body {
   max-width: 960px;
   margin: auto;
   padding: 1rem;
+  border-left: 4px solid #c10000;
+  border-right: 4px solid #c10000;
 }
 
 .title {
-  font-size: 2rem;
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2.8rem;
   text-align: center;
+  color: #c10000;
   margin-bottom: 2rem;
+  letter-spacing: 1px;
 }
 
 .form-table {
@@ -33,27 +42,46 @@ body {
 label {
   display: block;
   cursor: pointer;
-  border: 1px solid #ccc;
+  border: 2px dashed #999;
   padding: 1rem;
   border-radius: 8px;
-  transition: all 0.2s ease;
+  background: #f5f5f5;
+  transition: all 0.3s ease;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 label:hover {
-  background-color: #f9f9f9;
+  background-color: #e0e0e0;
+  border-color: #c10000;
 }
 
 .image {
   width: 100%;
-  max-width: 100px;
+  max-width: 90px;
   height: auto;
   margin-bottom: 0.5rem;
+  border-radius: 4px;
 }
 
 .points {
   font-weight: bold;
   font-size: 1.5rem;
-  color: #2a70b6;
+  color: #c10000;
+  font-family: 'Orbitron', sans-serif;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 2rem 0;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  padding: 2rem 0;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 /* Responsive styles */
@@ -72,7 +100,7 @@ label:hover {
   }
 
   .title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .points {
